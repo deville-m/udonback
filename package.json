@@ -1,0 +1,16 @@
+{
+  "name": "udon-back",
+  "version": "0.1.0",
+  "description": "udon back",
+  "main": "chat_back.js",
+  "scripts": {
+    "start": "node chat_back.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kemiimek@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}

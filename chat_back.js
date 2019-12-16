@@ -27,7 +27,7 @@ app.post('/upload', function (req, res) {
 		'-x',
 		'--audio-format', 'mp3',
 		'--audio-quality', '0',
-		`-o ${SAVE_DIR}/%(title)s.%(ext)s`,
+		'-o', `${SAVE_DIR}/%(title)s.%(ext)s`,
 		req.body.url];
 
 	ytdl = spawn('youtube-dl', options);

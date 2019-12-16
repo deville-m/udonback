@@ -4,7 +4,9 @@ COPY . /opt
 
 WORKDIR /opt
 
-RUN apt install youtube-dl && npm install
+RUN apt update &&\
+    apt install youtube-dl ffmpeg &&\
+    npm install
 
 EXPOSE 5001
 

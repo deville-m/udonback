@@ -4,7 +4,7 @@ COPY . /opt
 
 WORKDIR /opt
 
-RUN npm install
+RUN apt install youtube-dl && npm install
 
 EXPOSE 5001
 
